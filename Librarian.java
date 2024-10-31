@@ -8,10 +8,14 @@ public class Librarian extends User {
         this.libraryBooks = libraryBooks;
     }
 
+    //prints data the name of the librian that added a new book
+
     public void addBook(String title, String author) {
         libraryBooks.add(new Book(title, author));
         System.out.println("Book added to library by librarian " + name);
     }
+
+    //function after book is returned will print text 
 
     public void returnBook(Book book) {
         book.returnBook();

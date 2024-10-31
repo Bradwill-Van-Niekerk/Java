@@ -40,7 +40,7 @@ public class LibraryManagementSystem {
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -74,7 +74,7 @@ public class LibraryManagementSystem {
                     System.out.println("Exiting Library Management System.");
                     break;
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("Select from the choices above.");
             }
         }
         scanner.close();
